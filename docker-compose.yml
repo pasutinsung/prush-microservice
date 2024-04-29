@@ -1,0 +1,19 @@
+version: "3"
+services:
+  prush-backend-admin:
+    build: ./prush-backend-admin
+    ports:
+      - "8000:8000"
+    restart: always
+
+  prush-backend-auth:
+    build: ./prush-backend-auth
+    ports:
+      - "8001:8000"
+    restart: always
+
+  prush-backend-orders:
+    build: ./prush-backend-orders
+    ports:
+      - "8002:8000"
+    restart: always
